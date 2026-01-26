@@ -1,2 +1,1 @@
 # AI_ML_Fellowship_GDGOC_ATK
-Internship tasks completed for ApexcifyTechnologys
