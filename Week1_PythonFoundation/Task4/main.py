@@ -5,6 +5,7 @@ from modules.records import student_menu, contact_menu
 from modules.bank import demo_bank_accounts
 from modules.generators_mod import demo_generators
 from modules.decorators_mod import demo_decorator
+from mypackage import add_numbers, print_details, square, uppercase
 
 
 def run_math_demo():
@@ -49,7 +50,9 @@ def main():
         print("6 Bank account system")
         print("7 Generators")
         print("8 Decorators")
-        print("9 Exit")
+        print("9 Custom package demo")
+        print("10 Exit")
+
 
         choice = input("Enter your choice: ")
 
@@ -78,12 +81,22 @@ def main():
             run_decorators_demo()
 
         elif choice == "9":
-            print("Exiting Task 4")
-            break
+            run_package_demo()
 
+        elif choice == "10":
+            break
+        
         else:
             print("Invalid choice")
 
 
 if __name__ == "__main__":
     main()
+
+def run_package_demo():
+    print("Custom Package Demo")
+    print(add_numbers(1, 2, 3, 4))
+    print(square(5))
+    print(uppercase("task four"))
+    print_details(name="Ali", role="Student", task=4)
+    print()
